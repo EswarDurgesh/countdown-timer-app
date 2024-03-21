@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* Reset default styles (optional, but can help normalize browser defaults) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* App styles */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage {
+  background: linear-gradient(to bottom, #85bbf5, #800080); /* Blue to purple gradient */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.countdown-heading {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.countdown-form {
+  display: flex;
+  justify-content: space-between; /* Arrange input and button horizontally */
+  margin-bottom: 20px;
+}
+
+.date-input {
+  border: 1px solid #ddd; /* Border for the input field */
+  border-radius: 5px;
+  padding: 10px;
+  flex-grow: 1; /* Allow the input field to grow */
+}
+
+.start-countdown-btn {
+  background-color: #fff;
+  color: #007bff; /* Blue text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-countdown-btn:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #fff;
+}
+
+.rectangular-boxes {
+  display: flex;
+  margin-top: 20px;
+}
+
+.rectangular-box {
+  background-color: #007bff; /* Solid blue background */
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  /* Consider adding a border to distinguish the boxes (optional) */
+  border: 1px solid #ddd;
+}
+
+.label {
+  font-size: 14px; /* Label font size */
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 24px; /* Value font size */
+  color: #fff;
+}
+
+.countdown-controls {
+  display: flex;
+  margin-top: 20px;
+}
+
+.control-btn {
+  background-color: #fff;
+  color: #007bff; /* Blue text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #fff;
+}
+
+.countdown-complete {
+  font-weight: bold; /* Make "Countdown Complete" stand out */
 }
